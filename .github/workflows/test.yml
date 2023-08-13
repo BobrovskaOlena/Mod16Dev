@@ -25,5 +25,5 @@ jobs:
         run: gradlew.bat test
 
       - name: Display success message
-        if: success()
+        if: ${{ success() }}
         run: echo "Successful operation"
